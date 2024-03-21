@@ -16,5 +16,9 @@ module Midjourney
     def result(parameters: {})
       Midjourney::Client.json_post(path: "/result", parameters: parameters)
     end
+
+    def variations(parameters: {})
+      Midjourney::Client.json_post(path: "/variations", parameters: parameters)
+    end
   end
 end
